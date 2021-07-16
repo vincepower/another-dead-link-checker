@@ -48,8 +48,8 @@ for link in soup.find_all('a', href=True):
     # Using colorama to make 2xx status codes green,
     # 3xx yellow, and the rest red
     if str(tested.status_code).startswith("2"):
-        print(Fore.GREEN + Back.BLACK + tested.url + "\t" + str(tested.status_code))
+        print(Fore.GREEN + tested.url + "\t" + str(tested.status_code))
     elif str(tested.status_code).startswith("3"):
-        print(Fore.YELLOW + Back.BLACK + tested.url + "\t" + str(tested.status_code))
+        print(Fore.YELLOW + tested.url + "\t" + str(tested.status_code))
     else:
-        print(Fore.RED + Back.BLACK + tested.url + "\t" + str(tested.status_code))
+        print(Fore.RED + tested.url + "\t" + str(tested.status_code))
