@@ -30,8 +30,8 @@ https://gifted-tesla-ec935f.netlify.app/bad.html	200
 https://gifted-tesla-ec935f.netlify.app/good.html	200
 ```
 
-![image All working links](README_good.png)
+![image All working links](README-good.png)
 
-![image Some bad links](README_bad.png)
+![image Some bad links](README-bad.png)
 
-![image Random mixture of links](README_random.png)
+![image Random mixture of links](README-random.png)
