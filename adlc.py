@@ -1,10 +1,9 @@
 from bs4 import BeautifulSoup
-from markdown import markdown
 import requests
 import urllib3
 from urllib.parse import urlparse
 import sys
-from colorama import Fore,Style,Back,init
+from colorama import Fore,init
 
 # Using init from \colorama so it works
 init(autoreset=True)

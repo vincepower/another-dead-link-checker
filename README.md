@@ -4,7 +4,7 @@ This will parse a web page and validate all href references on the page.
 
 ## Using it
 
-### Create virtual environment
+### Create and activate a virtual environment
 ```
 python3 -m venv adlc
 source adlc/bin/activate
@@ -12,22 +12,26 @@ source adlc/bin/activate
 
 ### Loading requirements
 ```
+cd another-dead-link-checker
+pip install -r requirements.txt
+```
+
+### Running another-dead-link-checker
+```
 python adlc.py <url>
 ```
 
 ## Sample output
 
-### All good
 ```
-python adlc https://gifted-tesla-ec935f.netlify.app/good.html
-```
-
-### Some bad
-```
-python adlc https://gifted-tesla-ec935f.netlify.app/bad.html
+(adlc) % python adlc.py https://gifted-tesla-ec935f.netlify.app/
+https://gifted-tesla-ec935f.netlify.app/random.html	200
+https://gifted-tesla-ec935f.netlify.app/bad.html	200
+https://gifted-tesla-ec935f.netlify.app/good.html	200
 ```
 
-### All external with some redirects
-```
-python adlc https://gifted-tesla-ec935f.netlify.app/random.html
-```
+![image All working links](README_good.png)
+
+![image Some bad links](README_bad.png)
+
+![image Random mixture of links](README_random.png)
